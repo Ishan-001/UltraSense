@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_mode_entries">
+        <item>Continious Wave</item>
+        <item>Frequency Modulated CW (experimental)</item>
+    </string-array>
+    <string-array name="pref_mode_values">
+        <item>CW</item>
+        <item>FMCW</item>
+    </string-array>
+
+    <string-array name="pref_key_fft_length_entries">
+        <item>8192</item>
+        <item>4096</item>
+        <item>2048</item>
+        <item>1024</item>
+    </string-array>
+    <string-array name="pref_key_fft_length_values">
+        <item>8192</item>
+        <item>4096</item>
+        <item>2048</item>
+        <item>1024</item>
+    </string-array>
+
+    <string-array name="pref_key_extractors_entries">
+        <item>None</item>
+        <item>GE: DownUp and Swipe</item>
+        <item>GE: DownUp</item>
+        <item>GE: Swipe</item>
+        <item>AE: Workdesk</item>
+        <item>AE: BedFall</item>
+
+    </string-array>
+    <string-array name="pref_key_extractors_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>

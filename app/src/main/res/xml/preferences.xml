@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="pref_ignore_settings_warning"
+        android:title="@string/pref_ignore_settings_warning"
+        android:defaultValue="false"/>
+
+    <CheckBoxPreference
+        android:key="pref_key_use_precalibration"
+        android:title="@string/pref_key_use_precalibration"
+        android:defaultValue="true"/>
+
+    <ListPreference
+        android:key="pref_mode"
+        android:title="@string/pref_mode"
+        android:dialogTitle="@string/pref_mode"
+        android:entries="@array/pref_mode_entries"
+        android:entryValues="@array/pref_mode_values"
+        android:defaultValue="CW" />
+
+
+    <PreferenceCategory
+        android:title="@string/cw_paras"
+        android:key="pref_key_cw_paras">
+
+        <ListPreference
+            android:key="pref_key_extractors"
+            android:title="@string/pref_key_extractors"
+            android:dialogTitle="@string/pref_key_extractors"
+            android:entries="@array/pref_key_extractors_entries"
+            android:entryValues="@array/pref_key_extractors_values"
+            android:defaultValue="0" />
+
+        <CheckBoxPreference
+            android:key="pref_key_noisy_env"
+            android:title="@string/pref_key_noisy_env"
+            android:defaultValue="false"/>
+
+        <EditTextPreference
+            android:key="pref_key_db_threshold"
+            android:title="@string/pref_key_db_threshold"
+            android:defaultValue="-55.0"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <EditTextPreference
+            android:key="pref_key_halfCarrierWidth"
+            android:title="@string/pref_key_halfCarrierWidth"
+            android:defaultValue="4"
+            android:inputType="number" />
+
+        <EditTextPreference
+            android:key="pref_key_feat_high_threshold"
+            android:title="@string/pref_key_feat_high_threshold"
+            android:defaultValue="3"
+            android:inputType="numberDecimal" />
+
+        <EditTextPreference
+            android:key="pref_key_feat_low_threshold"
+            android:title="@string/pref_key_feat_low_threshold"
+            android:defaultValue="2"
+            android:inputType="numberDecimal" />
+
+        <EditTextPreference
+            android:key="pref_key_feat_slack"
+            android:title="@string/pref_key_feat_slack"
+            android:defaultValue="0"
+            android:inputType="number" />
+
+        <CheckBoxPreference
+            android:key="pref_key_ignore_noise"
+            android:title="@string/pref_key_ignore_noise"
+            android:defaultValue="false"/>
+
+        <EditTextPreference
+            android:key="pref_max_feat_threshold"
+            android:title="@string/pref_max_feat_threshold"
+            android:defaultValue="0"
+            android:inputType="number" />
+
+        <EditTextPreference
+            android:key="pref_key_cw_freq"
+            android:title="@string/pref_title_cw_freq"
+            android:defaultValue="20000"
+            android:inputType="numberDecimal" />
+
+        <ListPreference
+            android:key="pref_key_fft_length"
+            android:title="@string/pref_key_fft_length"
+            android:dialogTitle="@string/pref_key_fft_length"
+            android:entries="@array/pref_key_fft_length_entries"
+            android:entryValues="@array/pref_key_fft_length_values"
+            android:defaultValue="4096" />
+
+        <EditTextPreference
+            android:key="pref_key_hopsize"
+            android:title="@string/pref_key_hopsize"
+            android:defaultValue="0.5"
+            android:inputType="numberDecimal" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_fmcw_paras"
+        android:key="pref_key_fmcw_paras">
+        <EditTextPreference
+            android:key="pref_key_fmcw_bottom_freq"
+            android:title="@string/pref_title_fmcw_bottom_freq"
+            android:defaultValue="19000"
+            android:inputType="numberDecimal" />
+        <EditTextPreference
+            android:key="pref_key_fmcw_top_freq"
+            android:title="@string/pref_title_fmcw_top_freq"
+            android:defaultValue="20000"
+            android:inputType="numberDecimal" />
+        <EditTextPreference
+            android:key="pref_key_fmcw_chirp_duration"
+            android:title="@string/pref_title_fmcw_chirp_duration"
+            android:defaultValue="0.5"
+            android:inputType="numberDecimal" />
+        <EditTextPreference
+            android:key="pref_key_fmcw_chirp_cycles"
+            android:title="@string/pref_title_fmcw_chirp_cycles"
+            android:defaultValue="5"
+            android:inputType="numberDecimal"/>
+        <CheckBoxPreference
+            android:key="pref_key_fmcw_ramp_up"
+            android:title="@string/pref_title_fmcw_ramp_up"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
